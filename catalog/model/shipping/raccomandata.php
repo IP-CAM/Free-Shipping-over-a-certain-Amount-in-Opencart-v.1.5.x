@@ -28,7 +28,7 @@ class ModelShippingRaccomandata extends Model {
 			$maxTotal = $this->config->get('raccomandata_max_total');
 			$cost = $this->config->get('raccomandata_cost');
 			
-			if ($subtotal >= $maxTotal)
+			if ($subTotal >= $maxTotal)
 				$cost = 0;
 
 	      		$quote_data['raccomandata'] = array(
